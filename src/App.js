@@ -1,10 +1,18 @@
 import './App.css';
+import {
+  Switch, Route, BrowserRouter,
+} from 'react-router-dom';
+import StockCatalogue from './components/StockCatalogue';
+import Company from './components/Company';
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello</h1>
-    </div>
+    <BrowserRouter className="App">
+      <Switch>
+        <Route path="/" component={StockCatalogue} exact />
+        <Route path="/:ticker" component={Company} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
