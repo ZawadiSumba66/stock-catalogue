@@ -32,7 +32,7 @@ const getcompany = (ticker) => async (dispatch) => {
   dispatch({
     type: LOAD_COMPANY,
   });
-  axios.get(`https://financialmodelingprep.com/api/v3/quote/${ticker}?apikey=${API_KEY}`)
+  axios.get(`https://financialmodelingprep.com/api/v3/profile/${ticker}?apikey=${API_KEY}`)
     .then((response) => {
       dispatch({
         type: GET_COMPANY,

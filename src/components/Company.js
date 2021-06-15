@@ -14,10 +14,12 @@ function Company({ company, loading, getcompany }) {
   }
   return (
     <div>
-      <p>{company.name}</p>
-      <p>{company.change}</p>
-      <p>{company.dayLow}</p>
-      <p>{company.dayHigh}</p>
+      <img src={company.image} alt="" />
+      <h1>{company.name}</h1>
+      <p>{company.country}</p>
+      <p>{company.currency}</p>
+      <p>{company.price}</p>
+      <p><p>{company.changes}</p></p>
       <p>{company.exchange}</p>
       <Link to="/"> Go back</Link>
     </div>
