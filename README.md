@@ -4,11 +4,11 @@
 
 In this project I created a catalogue of financial statistica for various companies using data fetched from financial modelling prep API. One can also filter data to see either the Gainers or losers in the market.
 
-See Live version of app [here](https://project-bookstore-cms.herokuapp.com/) 
+See Live version of app [here](https://rose-financial-stock.herokuapp.com/) 
 
-![Stockpage](./src/assets/homepage.png)
+![Stockpage](src/assets/homepage.png)
 
-![companyPage](./src/assets/singlepage.png)
+![companyPage](src/assets/singlepage.png)
 
 ## Built With
 
