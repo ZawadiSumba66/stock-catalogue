@@ -13,7 +13,7 @@ function Company({ company, loading, getcompany }) {
     return <p>Please wait...</p>;
   }
   return (
-    <div className="company">
+    <div className="company" data-testid="company">
       <div className="text-center">
         <img src={company.image} alt="" />
       </div>

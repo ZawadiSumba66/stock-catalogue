@@ -8,7 +8,7 @@ import {
   LOAD_COMPANY,
 } from './type';
 
-const API_KEY = '8363e942a393eaaf6061932fbb0ad836';
+const API_KEY = '077d17cbc276e91560070906ac3c6ddc';
 
 const getstock = () => async (dispatch) => {
   dispatch({

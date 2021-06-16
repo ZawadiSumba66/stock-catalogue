@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the category filter snapshot 1`] = `
+<form
+  className="form"
+  data-testid="category-filter"
+>
+  Filter Stock:
+   
+  <select
+    className="category-input"
+    onChange={[Function]}
+  >
+    <option
+      value="ALL"
+    >
+      ALL
+    </option>
+    <option
+      value="Gainers"
+    >
+      Gainers
+    </option>
+    <option
+      value="Losers"
+    >
+      Losers
+    </option>
+  </select>
+</form>
+`;

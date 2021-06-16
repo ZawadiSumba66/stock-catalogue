@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const StockItem = ({ company }) => (
   <div className="card bg-dark text-center">
     <h4>{company.companyName}</h4>
-    <h3>
+    <h3 data-testid="stock-item">
       $
       {company.price}
     </h3>
@@ -16,7 +16,6 @@ const StockItem = ({ company }) => (
     <div className="card-footer">
       <Link className="card-link btn text-light font-weight-bold" to={`/${company.ticker}`}>View more</Link>
     </div>
-    <br />
   </div>
 );
 

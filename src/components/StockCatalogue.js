@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { getstock } from '../actions/index';
 import StockItem from './StockItem';
 import CategoryFilter from './CategoryFilter';
-import filterStock from '../actions/filter';
-import store from '../store';
 
 const StockCatalogue = ({
   getStock, loading, stock, filter,
@@ -14,12 +12,8 @@ const StockCatalogue = ({
     getStock();
   }, []);
 
-  const handleFilterChange = (e) => {
-    store.dispatch(filterStock(e.target.value));
-  };
-
   if (loading) {
-    return <p>Please wait...</p>;
+    return <p data-testid="stock-catalogue">Please wait...</p>;
   }
 
   const gainer = filter === 'Gainers' ? '+' : '-';
@@ -35,7 +29,7 @@ const StockCatalogue = ({
           <i className="fas fa-poll" />
           STOCK MARKET
         </span>
-        <CategoryFilter handleFilterChange={handleFilterChange} className="filter" />
+        <CategoryFilter className="filter" />
       </div>
       <div className="stock">
         {
