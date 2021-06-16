@@ -6,9 +6,9 @@ In this project I created a catalogue of financial statistica for various compan
 
 See Live version of app [here](https://project-bookstore-cms.herokuapp.com/) 
 
-![Stockpage](assets/homepage.png)
+![Stockpage](./src/assets/homepage.png)
 
-![companyPage](assets/singlepage.png)
+![companyPage](./src/assets/singlepage.png)
 
 ## Built With
 
