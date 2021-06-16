@@ -38,6 +38,15 @@
   font-family: Montserrat;
 }
 
+.fa-poll {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.logo {
+  font-family: Montserrat;
+}
+
 .card-link {
   background-color: #FF2A52;
 }
@@ -55,12 +64,65 @@
 }
 
 .company {
-  background-color: rgb(19,21,25);;
+  background-color: #343A40;
   color: #fff;
   font-family: RobotoSlab;
+  height: 110vh;
+  padding-top: 3rem;
+  border: 1px solid black;
 }
 
 .company-details {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.company-details .card {
+  background-color: rgba(255,42,82,0.5);
+}
+
+.my-display {
+  width: 50%;
+  border: 2px solid #FF2A52;
+}
+
+@media screen and (max-width: 1024px) {
+  .stock{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .stock {
+    display: grid;
+  grid-template-columns: 1fr;
+  }
+  .company {
+    height: 170vh;
+  }
+  .company-details {
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+  }
+  .category-input {
+    width: 180px;
+    height: 35px;
+    align-items: center;
+
+  }
+  .header { 
+    display: block;
+    height: 120px;
+    padding-bottom: 1rem;
+  }
+
+  h5 {
+    color: #007BFF;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
 }

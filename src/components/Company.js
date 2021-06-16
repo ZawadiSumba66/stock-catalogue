@@ -13,51 +13,52 @@ function Company({ company, loading, getcompany }) {
     return <p>Please wait...</p>;
   }
   return (
-    <div className="company text-center">
-      <img src={company.image} alt="" />
-      <h1>{company.companyName}</h1>
-      <div className="company-details">
-
-        <div>
-          <h5>Country:</h5>
+    <div className="company">
+      <div className="text-center">
+        <img src={company.image} alt="" />
+      </div>
+      <h1 className="text-center">{company.companyName}</h1>
+      <hr className="my-display" />
+      <div className="company-details mx-auto">
+        <div className="card text-light font-weight-bold">
+          <h4 className="text-primary font-weight-bold">Country:</h4>
           <p>
             {company.country}
           </p>
         </div>
-        <div>
-          <h5>Price</h5>
+        <div className="card text-light font-weight-bold">
+          <h4 className="text-primary font-weight-bold">Price</h4>
           <p>
             $
             {company.price}
           </p>
         </div>
-        <div>
-          x
-          <h5>Beta</h5>
+        <div className="card text-light font-weight-bold">
+          <h4 className="text-primary font-weight-bold">Beta</h4>
           <p>
             {company.beta}
           </p>
         </div>
-        <div>
-          <h5>LastDiv</h5>
+        <div className="card text-light font-weight-bold">
+          <h4 className="text-primary font-weight-bold">LastDiv</h4>
           <p>
             {company.lastDiv}
           </p>
         </div>
-        <div>
-          <h5>Range</h5>
+        <div className="card text-light font-weight-bold">
+          <h4 className="text-primary font-weight-bold">Range</h4>
           <p>
             {company.range}
           </p>
         </div>
-        <div>
-          <h5>Exchange</h5>
+        <div className="card text-light font-weight-bold">
+          <h4 className="text-primary font-weight-bold">Exchange</h4>
           <p>
             {company.exchange}
           </p>
         </div>
       </div>
-      <Link to="/"> Go back</Link>
+      <Link className="card-link btn font-weight-bold text-light text-uppercase btn-large ml-4 mt-4" to="/"> Go back</Link>
     </div>
   );
 }

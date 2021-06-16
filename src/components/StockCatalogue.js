@@ -31,7 +31,10 @@ const StockCatalogue = ({
   return (
     <div>
       <div className="header">
-        <span>Stock Market</span>
+        <span className="logo">
+          <i className="fas fa-poll" />
+          STOCK MARKET
+        </span>
         <CategoryFilter handleFilterChange={handleFilterChange} className="filter" />
       </div>
       <div className="stock">
