@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.body {
+  background-color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FF2A52;
+  height: 60px;
+  padding: 20px 30px;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.stock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(19,21,25);
+  color: #fff;
+  grid-gap: 1rem;
+  padding: 1rem;
+}
+
+.filter {
+  display: flex;
+  justify-content: flex-end;
+}
+.card {
+  padding: 10px;
+  font-family: Montserrat;
+}
+
+.card-link {
+  background-color: #FF2A52;
+}
+
+.category-input {
+  width: 245px;
+  height: 45px;
+  padding: 6px 15px 9px 16px;
+  font-size: 16px;
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 6px 15px 9px 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.company {
+  background-color: rgb(19,21,25);;
+  color: #fff;
+  font-family: RobotoSlab;
+}
+
+.company-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}

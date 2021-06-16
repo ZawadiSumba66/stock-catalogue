@@ -13,14 +13,50 @@ function Company({ company, loading, getcompany }) {
     return <p>Please wait...</p>;
   }
   return (
-    <div>
+    <div className="company text-center">
       <img src={company.image} alt="" />
-      <h1>{company.name}</h1>
-      <p>{company.country}</p>
-      <p>{company.currency}</p>
-      <p>{company.price}</p>
-      <p><p>{company.changes}</p></p>
-      <p>{company.exchange}</p>
+      <h1>{company.companyName}</h1>
+      <div className="company-details">
+
+        <div>
+          <h5>Country:</h5>
+          <p>
+            {company.country}
+          </p>
+        </div>
+        <div>
+          <h5>Price</h5>
+          <p>
+            $
+            {company.price}
+          </p>
+        </div>
+        <div>
+          x
+          <h5>Beta</h5>
+          <p>
+            {company.beta}
+          </p>
+        </div>
+        <div>
+          <h5>LastDiv</h5>
+          <p>
+            {company.lastDiv}
+          </p>
+        </div>
+        <div>
+          <h5>Range</h5>
+          <p>
+            {company.range}
+          </p>
+        </div>
+        <div>
+          <h5>Exchange</h5>
+          <p>
+            {company.exchange}
+          </p>
+        </div>
+      </div>
       <Link to="/"> Go back</Link>
     </div>
   );

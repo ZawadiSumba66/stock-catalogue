@@ -30,10 +30,15 @@ const StockCatalogue = ({
   }
   return (
     <div>
-      <CategoryFilter handleFilterChange={handleFilterChange} />
-      {
+      <div className="header">
+        <span>Stock Market</span>
+        <CategoryFilter handleFilterChange={handleFilterChange} className="filter" />
+      </div>
+      <div className="stock">
+        {
               filteredStock.map((item) => <StockItem key={stock.ticker} company={item} />)
           }
+      </div>
     </div>
   );
 };

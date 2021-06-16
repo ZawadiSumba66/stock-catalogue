@@ -4,7 +4,9 @@ const CATEGORIES = ['ALL', 'Gainers', 'Losers'];
 
 const CategoryFilter = ({ handleFilterChange }) => (
   <form className="form">
-    <select onChange={handleFilterChange}>
+    Filter Stock:
+    {' '}
+    <select onChange={handleFilterChange} className="category-input">
       {
                 CATEGORIES.map((value) => (
                   <option value={value} key={value}>
