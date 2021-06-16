@@ -1,12 +1,14 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # FINANCIAL STOCK (CATALOGUE OF STATISTICS)
 
 In this project I created a catalogue of financial statistica for various companies using data fetched from financial modelling prep API. One can also filter data to see either the Gainers or losers in the market.
 
 See Live version of app [here](https://project-bookstore-cms.herokuapp.com/) 
 
-![Stockpage](src/assets/homepage.png)
+![Stockpage](assets/homepage.png)
 
-![companyPage](src/assets/singlepage.png)
+![companyPage](assets/singlepage.png)
 
 ## Built With
 
