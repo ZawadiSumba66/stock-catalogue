@@ -2,7 +2,7 @@
 
 # FINANCIAL STOCK (CATALOGUE OF STATISTICS)
 
-In this project I created a catalogue of financial statistica for various companies using data fetched from financial modelling prep API. One can also filter data to see either the Gainers or Losers in the market.
+In this project I created a catalogue of financial statistics for various companies using data fetched from financial modelling prep API. One can also filter data to see either the Gainers or Losers in the market.
 
 See Live version of app [here](https://rose-financial-stock.herokuapp.com/) 
 
