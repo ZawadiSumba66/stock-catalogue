@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getstock } from '../actions/index';
-import StockItem from './StockItem';
-import CategoryFilter from './CategoryFilter';
+import StockItem from '../components/StockItem';
+import CategoryFilter from '../components/CategoryFilter';
 
 const StockCatalogue = ({
   getStock, loading, stock, filter,

@@ -4,7 +4,7 @@ import { shallow, configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import StockCatalogue from '../../components/StockCatalogue';
+import StockCatalogue from '../../containers/StockCatalogue';
 import store from '../../store';
 
 configure({ adapter: new Adapter() });
