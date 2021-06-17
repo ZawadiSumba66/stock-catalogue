@@ -21,9 +21,9 @@ See Live version of app [here](https://rose-financial-stock.herokuapp.com/)
 - Redux
 - npm
 - CSS
+- Boostrap
 - ES6
 - Jest
-- Enzyme
 - STOCK API from https://financialmodelingprep.com/ 
 
 ## Getting Started
