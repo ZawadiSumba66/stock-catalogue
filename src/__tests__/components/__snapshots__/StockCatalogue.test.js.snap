@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches the stock catalogue snapshot 1`] = `
+<div>
+  <div
+    className="header"
+  >
+    <span
+      className="logo"
+    >
+      <i
+        className="fas fa-poll"
+      />
+      STOCK MARKET
+    </span>
+    <form
+      className="form"
+      data-testid="category-filter"
+    >
+      Filter Stock:
+       
+      <select
+        className="category-input"
+        onChange={[Function]}
+      >
+        <option
+          value="ALL"
+        >
+          ALL
+        </option>
+        <option
+          value="Gainers"
+        >
+          Gainers
+        </option>
+        <option
+          value="Losers"
+        >
+          Losers
+        </option>
+      </select>
+    </form>
+  </div>
+  <div
+    className="stock"
+  />
+</div>
+`;
