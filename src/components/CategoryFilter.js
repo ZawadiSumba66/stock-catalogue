@@ -1,11 +1,11 @@
-import filterStock from '../actions/filter';
+import { createFilter } from '../slices/filter.slice';
 import store from '../store';
 
 const CATEGORIES = ['ALL', 'Gainers', 'Losers'];
 
 const CategoryFilter = () => {
   const handleFilterChange = (e) => {
-    store.dispatch(filterStock(e.target.value));
+    store.dispatch(createFilter(e.target.value));
   };
   return (
     <form className="form" data-testid="category-filter">

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { getcompany } from '../actions/index';
+import { getcompany } from '../slices/company.slice';
 
 function Company({ company, loading, getcompany }) {
   const { ticker } = useParams();
@@ -64,8 +64,8 @@ function Company({ company, loading, getcompany }) {
 }
 
 const mapStateToProps = (state) => ({
-  company: state.stockReducer.company,
-  loading: state.stockReducer.loading,
+  company: state.company.company,
+  loading: state.company.loading,
 });
 
 Company.propTypes = {

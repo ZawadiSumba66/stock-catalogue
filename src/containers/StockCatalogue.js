@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { getstock } from '../actions/index';
+import { getstock } from '../slices/stock.slice';
 import StockItem from '../components/StockItem';
 import CategoryFilter from '../components/CategoryFilter';
 
 const StockCatalogue = ({
-  getStock, loading, stock, filter,
+  getStock, loading, stock, filter, error,
 }) => {
   useEffect(() => {
     getStock();
@@ -15,6 +15,8 @@ const StockCatalogue = ({
   if (loading) {
     return <p data-testid="stock-catalogue">Please wait...</p>;
   }
+
+  console.log(error);
 
   const gainer = filter === 'Gainers' ? '+' : '-';
   let filteredStock = stock;
@@ -41,9 +43,10 @@ const StockCatalogue = ({
 };
 
 const mapStateToProps = (state) => ({
-  stock: state.stockReducer.stock,
-  loading: state.stockReducer.loading,
-  filter: state.filterReducer.category,
+  stock: state.stock.stock,
+  loading: state.stock.loading,
+  filter: state.filter.category,
+  error: state.stock.error,
 });
 const mapDispatchToProps = (dispatch) => ({
   getStock: () => dispatch(getstock()),
@@ -53,6 +56,7 @@ StockCatalogue.propTypes = {
   getStock: PropTypes.func.isRequired,
   stock: PropTypes.instanceOf(Array).isRequired,
   loading: PropTypes.bool.isRequired,
+  error: PropTypes.string.isRequired,
   filter: PropTypes.string.isRequired,
 };
 
