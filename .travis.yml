@@ -2,21 +2,21 @@ language: node_js
 node_js:
   - '8'
 cache:
-  yarn: true
+  npm: true
   directories:
     - node_modules
 script:
-  - yarn test
+  - npm test
 before_deploy:
-  - yarn global add travis-ci-cloudfront-invalidation
-  - yarn run build
+  - npm global add travis-ci-cloudfront-invalidation
+  - npm run build
 deploy:
   provider: s3
   access_key_id: $AWS_ACCESS_KEY_ID
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: $S3_BUCKET
   skip_cleanup: true
-  local-dir: dist
+  local-dir: build
   on:
     branch: development
 after_deploy:
