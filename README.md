@@ -55,7 +55,7 @@ To get a local copy up and running follow these steps.
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a ⭐️ if you like this project.
 
 ## License :memo:
 # Released under MIT License
