@@ -14,12 +14,7 @@ See Live version of app [here](https://rose-financial-stock.herokuapp.com/)
 
 ## Built With
 
-- Node.js
-- React
-- React-DOM
-- React-Create-App
-- Redux
-- npm
+- React and Redux
 - CSS
 - Boostrap
 - ES6
